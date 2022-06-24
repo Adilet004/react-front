@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+    text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header{
+    background: #070707;
+    padding: 16px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-links{
+margin-right: 50px;
+    font-family: 'IBM Plex Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.nav-links:hover{
+    color: green;
 }
 
-.App-link {
-  color: #61dafb;
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 10px 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #40AB7E;
+    border-radius: 30px;
+    background: #070707;
+    margin: 0 5px;
+    color: #40AB7E;
+}
+
+.btn:hover{
+    color:#070707;
+    background: #7CBA72;
+}
+
+.active{
+    color: red;
+}
+
+
+
+.row{
+    display: flex;
+   flex-wrap: wrap;
+    margin: 30px -35px;
+}
+
+
+.col-3{
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+.img{
+    margin: 20px 0;
+}
+
+.movie-img{
+    object-fit: cover;
 }
